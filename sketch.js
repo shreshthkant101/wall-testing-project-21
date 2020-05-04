@@ -21,7 +21,7 @@ function draw() {
   
   if(wall.x - car.x < (car.width + wall.width)/2){
     
-    var deform  = (0.5 * weight * speed * speed)/ thickness * thickness * thickness;
+    var deform  = 0.5 * weight * speed * speed/ (thickness * thickness * thickness);
     if(deform>10){
       wall.shapeColor=color("red");
     }
